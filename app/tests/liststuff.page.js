@@ -6,6 +6,7 @@ class ListStuffPage {
     this.pageSelector = Selector(this.pageId);
   }
 
+  /** checking. */
   async isDisplayed(testController) {
     await testController.wait(10000).expect(this.pageSelector.exists).ok();
   }
