@@ -38,7 +38,6 @@ class NavBar {
   }
 
   async gotoListStuffPage(testController) {
-    await testController.expect(Selector('#navbar-list-stuff').exists).ok();
     await testController.click('#navbar-list-stuff');
   }
 }
